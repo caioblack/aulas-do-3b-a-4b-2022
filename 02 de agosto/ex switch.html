@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var menu=parseInt(prompt("selecionar a cor da pagina: \n 1-azul\n 2-vermelho\n3-verde\n4-preta\n digite uma das opções acima"))
+        switch(menu){
+            case 1:
+            document.body.style.backgroundColor='blue';
+            break;
+            case 2:
+            document.body.style.backgroundColor='red';
+            break;
+            case 3:
+            document.body.style.backgroundColor='green';
+            break;
+            case 4:
+            document.body.style.backgroundColor='black';
+            break;
+            default:
+            document.body.style.backgroundColor='white';
+            break;
+        }
+    </script>
+</body>
+</html>
