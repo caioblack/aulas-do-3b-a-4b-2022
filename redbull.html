@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site HTML</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="TopBanner">
+		<img src="rblogo.jfif" width="130">
+	</div>
+	<ul>
+	<li><a href="#home">Home</a></li>
+	<li><a href="#about">Products</a></li>
+	<li><a href="#contact">Services</a></li>
+	<li><a href="#contact">Gadgets</a></li>
+	<li style="float:right"><a href="#contact" class="active">Contacts</a></li>
+	</ul>
+	<div id="Conteudo">
+		<form id="1">
+			<tr>
+				<td>QTD de números: </td>
+				<td><input type="text" name="QTD"></td>
+			</tr>
+			<tr>
+				<td><button onclick="criaCampos()">Inserir</button></td>
+			</tr>
+		</form>
+		<form id="2">
+		<script type="text/javascript">
+		function criaCampos(){
+			document.write("<tr><td>número: </td><td><input type="text" name="n1"></td></tr><tr>";
+			document.write("<td><button onclick="criaCampos()">Inserir</button></td></tr>";
+	}
+		</script>
+		</form>
+	</div>
+</body>
+</html>
